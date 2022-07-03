@@ -1,6 +1,8 @@
 spec_version: 2-preview
 description: Blueprint for bitnami nginx helm chart 
-
+ env-vars:
+- a
+- b
 inputs:
   replicaCount:
     type: number
