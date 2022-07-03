@@ -65,5 +65,3 @@ grains:
 
       inputs:
         - nameOverride: '{{.inputs.input1}}'
-        - name: blork
-          value: stork
