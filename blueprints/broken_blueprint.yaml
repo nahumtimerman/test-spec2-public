@@ -2,6 +2,10 @@ spec_version: 2-preview
 
 description: description text
 
+ env-vars:
+   - name: blongy
+     value: chongy
+
 inputs:
   input1:
     type: string
