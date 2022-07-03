@@ -2,13 +2,10 @@ spec_version: 2-preview
 
 description: description text
 
-env-vars:
- # intentionally broken parameter, see https://cs18.visualstudio.com/Torque/_workitems/edit/8783
-   - namre: var_name
-     value: value
 
-inp uts:
-   input1:
+
+inputs:
+  input1:
     type: string
     default: "default1"
     description: "environemnt input 1"
@@ -53,6 +50,10 @@ grains:
   helloHelm:
     kind: helm
     #depends-on: helloTF
+    env-vars:
+    # intentionally broken parameter, see https://cs18.visualstudio.com/Torque/_workitems/edit/8783
+    - name: var_name
+      value: value
     spec:
       source:
         path: https://github.com/bitnami/charts.git//bitnami/node
@@ -64,3 +65,5 @@ grains:
 
       inputs:
         - nameOverride: '{{.inputs.input1}}'
+        - name: blork
+          value: stork
