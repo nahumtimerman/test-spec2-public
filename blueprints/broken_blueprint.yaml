@@ -2,10 +2,6 @@ spec_version: 2-preview
 
 description: description text
 
-env-vars:
-  - name: blorn
-    value: skorn
-
 inputs:
   input1:
     type: string
@@ -56,6 +52,7 @@ grains:
     # intentionally broken parameter, see https://cs18.visualstudio.com/Torque/_workitems/edit/8783
     - name: var_name
       value: value
+    - blorny: korny
     spec:
       source:
         path: https://github.com/bitnami/charts.git//bitnami/node
