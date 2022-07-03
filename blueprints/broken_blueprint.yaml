@@ -7,7 +7,7 @@ env-vars:
    - namre: var_name
      value: value
 
-inputs:
+inp uts:
    input1:
     type: string
     default: "default1"
