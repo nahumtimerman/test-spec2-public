@@ -4,7 +4,7 @@ description: description text
 
 env-vars:
  # intentionally broken parameter, see https://cs18.visualstudio.com/Torque/_workitems/edit/8783
-   - name: var_name
+   - namre: var_name
      value: value
 
 inputs:
