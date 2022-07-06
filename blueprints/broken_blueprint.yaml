@@ -7,7 +7,7 @@ description: description text
      value: chongy
 
 inputs:
-  input1:
+  - input1:
     type: string
     default: "default1"
     description: "environemnt input 1"
