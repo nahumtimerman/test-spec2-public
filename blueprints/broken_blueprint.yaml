@@ -3,8 +3,8 @@ spec_version: 2-preview
 description: description text
 
 inputs:
-   input1:
-    - type: string
+  input1:
+     type: string
     default: "default1"
     description: "environemnt input 1"
   compute_service_name:
