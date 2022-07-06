@@ -2,12 +2,8 @@ spec_version: 2-preview
 
 description: description text
 
- env-vars:
-   - name: blongy
-     value: chongy
-
 inputs:
-  - input1:
+    - input1:
     type: string
     default: "default1"
     description: "environemnt input 1"
