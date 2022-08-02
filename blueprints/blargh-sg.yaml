@@ -6,6 +6,8 @@ inputs:
     type: string
     allowed-values: [a, b, c]
     default: c
+  eh:
+    type: execution-host
 # blueprint outputs define which data that was generated during environment provisioning will be returned to the user, API or CI.
 outputs: {}
 grains:
