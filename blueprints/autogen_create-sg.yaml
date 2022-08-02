@@ -1,0 +1,32 @@
+spec_version: 2
+description: Auto generated blueprint for terraform module create-sg
+# blueprint inputs can be provided by the user, API or CI plugin when creating an environment from this blueprint.
+inputs:
+  bla:
+    type: string
+    allowed-values: [a, b, c]
+    default: c
+# blueprint outputs define which data that was generated during environment provisioning will be returned to the user, API or CI.
+outputs: {}
+grains:
+  create-sg:
+    kind: terraform
+    spec:
+      source:
+        store: test-spec2-publicV
+        path: terraform/create-sg
+      host:
+      # Execution Host - the platform where the asset executable will run.
+      # For example, a Kubernetes cluster can be used as an execution host.
+        name: 'tartaron'
+        # A service account annotated with a role ARN with permissions to run the asset
+        # service-account: <service-account-name>
+      inputs:
+      - SG_NAME: '{{ .inputs.bla }}'
+      # The environment variables declared in this section will be available during the grain deployment as well as the grain destroy phase
+      # env-vars:
+      # - VAR_NAME: var value
+      env-vars: []
+      outputs: []
+    # The terraform version that will be used to deploy the module
+    tf-version: 1.2.6
