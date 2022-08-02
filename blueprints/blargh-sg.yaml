@@ -8,6 +8,9 @@ inputs:
     default: c
   eh:
     type: execution-host
+  eh2:
+    type: execution-host
+    allowed-values: [tartaron]
 # blueprint outputs define which data that was generated during environment provisioning will be returned to the user, API or CI.
 outputs: {}
 grains:
