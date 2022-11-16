@@ -34,8 +34,7 @@ grains:
         store: autogen_repo_sandbox_0b7a971e
         path: terraform/simple-tf-module
       host:
-        cloud-account: aws
-        compute-service: eks
+        type: execution-host
       inputs:
         - test_input1: env-input-{{.inputs.input1}}
         - test_input2: env-id-{{sandboxId}}
